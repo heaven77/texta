@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  html {
+    background: url(images/pearl-broad-streets.jpeg) no-repeat center fixed;
+    background-size: cover;
+    opacity: 0.8;
+  }
+
+  .grid-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: (4, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .navbar {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+height: 50px;
+width: 100%;
+background-color: black;
+gap: 25px;
+justify-content: center;
+  }
+
+
+
+  .cocktail-1 {
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+  }
+
+  .cocktail-2 {
+    background-color: gold;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+  }
+
+  .cocktail-3 {
+    background-color: red;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 15px;
+  }
+
+  .cocktail-4 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 15px;
+  }
+
+  .cocktail-5 {
+    background-color: blueviolet;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 15px;
+  }
+
+  .cocktail-6 {
+    background-color: burlywood;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 15px;
+  }
+
+  .cocktail-7 {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 15px;
+  }
+
+ /* NAV BAR */ 
+.navbar a{
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  align-self: center;}
+
+
+.navbar a:hover {
+  background-color:black;
+  color: goldenrod;}
+
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;}
+
+
+
+
+    /* dropdown menu*/
+    .dropbtn{
+        background-color: black;
+        color: white;
+        padding: 10px;
+          border: none;
+            font-size: 25px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;}
+
+        .dropdown-content a {
+            color: black;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                color: goldenrod;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;}
+
+                .dropdown:hover .dropbtn {
+                    color:goldenrod}
